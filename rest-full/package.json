@@ -4,6 +4,7 @@
   "description": "Microservicios para manejo de expedientes",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Rudy Apaza",

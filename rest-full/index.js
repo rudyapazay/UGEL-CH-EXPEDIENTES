@@ -7,7 +7,7 @@ var app=require('./app');
 
 
 var mongoURI= 'mongodb://localhost:27017';
-mongoose.connect('mongodb://localhost:27017/app_ugel',{useNewUrlParser: true}, (err,res)=>{
+mongoose.connect('mongodb://localhost:27017/ugel_exp',{useNewUrlParser: true}, (err,res)=>{
     if(err){
         throw err;
     }

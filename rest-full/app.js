@@ -7,8 +7,7 @@ var app = express();
 
 //carga de rutas
 
-//var album_routes = require('./routes/album');
-//var image_routes = require('./routes/image');
+const ExpedienteRouter = require('./routers/expediente-router');
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
@@ -25,7 +24,7 @@ app.use((req,res,next)=>{
     next();
 });
 // rutas base
-//app.use('/api',album_routes);
+app.use('/api',ExpedienteRouter);
 //app.use('/api',image_routes);
 
 

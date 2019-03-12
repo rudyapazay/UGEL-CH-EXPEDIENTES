@@ -1,4 +1,4 @@
-MicroServicios de administracion de clientes
+MicroServicios de administracion de expedientes
 
 Servicios desarrollado para la UGEL CHUMBIVILCAS
 
