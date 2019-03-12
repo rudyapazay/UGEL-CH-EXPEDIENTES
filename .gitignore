@@ -1,0 +1,33 @@
+#archivos del api rest
+rest-full/node_modules/*
+
+#archivos del client res
+client-ugel/node_modules/*
+client-ugel/dist/*
+client-ugel/dist
+client-ugel/tmp
+client-ugel/out-tsc
+
+
+#archivos del editos
+.editorconfig
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+client-ugel/.sass-cache
+client-ugel/connect.lock
+client-ugel/coverage
+client-ugel/libpeerconnection.log
+client-ugel/npm-debug.log
+client-ugel/yarn-error.log
+client-ugel/testem.log
+client-ugel/typings
+
+# profiling files
+client-ugel/chrome-profiler-events.json
+client-ugel/speed-measure-plugin.json

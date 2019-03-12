@@ -1,0 +1,18 @@
+{
+  "name": "exp-rest-full",
+  "version": "0.0.1",
+  "description": "Microservicios para manejo de expedientes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rudy Apaza",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
