@@ -9,14 +9,15 @@ import { ButtonsModule } from 'ngx-bootstrap';
 import { AppComponent } from './app.component';
 //modulo de expedientes
 import { ExpedienteModule } from 'modules/expediente-module/expediente.module';
-import { ExpedienteComponent } from 'modules/expediente-module/components/expediente.component';
 
 import { oficinaRoutingModule } from './app.routing';
+import { BuildingComponent } from './components/building.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BuildingComponent
   ],
   imports: [
     ButtonsModule.forRoot(),

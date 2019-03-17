@@ -15,9 +15,9 @@
             <td> {{ expediente.numero }}</td>
             <td> {{ expediente.descripcion}}</td>
             <td> 
-                <a href="expedientes" class="btn btn-primary btn-sm"  role="button">Derivar </a>
-                <a href="expedientes" class="btn btn-success btn-sm" role="button">Finalizar </a>
-                <a href="expedientes" class="btn btn-danger btn-sm" role="button"> Retornar </a> 
+                <a [routerLink]="['/building']"  class="btn btn-primary btn-sm"  role="button">Derivar </a>
+                <a [routerLink]="['/building']"  class="btn btn-success btn-sm" role="button">Finalizar </a>
+                <a [routerLink]="['/building']"  class="btn btn-danger btn-sm" role="button"> Retornar </a> 
             </td>
         </tr>
         

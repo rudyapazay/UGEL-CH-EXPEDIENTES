@@ -2,9 +2,10 @@
   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
       <h5 class="my-0 mr-md-auto font-weight-normal"> UGEL CHUMBIVILCAS </h5>
       <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">  Expedientes </a>
-        <a class="p-2 text-dark" href="#">  Historial  </a>
-        <a class="p-2 text-dark" href="#">  Salir </a>
+        <a class="p-2 text-dark" [routerLink]="['/']">  Inicio </a>
+        <a class="p-2 text-dark" [routerLink]="['/expedientes']"  > Expedientes </a>
+        <a class="p-2 text-dark" [routerLink]="['/building']">  Historial  </a>
+        <a class="p-2 text-dark" [routerLink]="['/building']">  Salir </a>
       </nav>
   </div>
 
