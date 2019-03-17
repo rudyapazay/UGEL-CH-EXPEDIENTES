@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { ExpedienteComponent } from './expediente.component';
+import { ExpedienteComponent } from './components/expediente.component';
 
 @NgModule({
   declarations: [
