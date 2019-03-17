@@ -138,7 +138,263 @@
           }
         }
       }
+    },
+    "mesa-partes": {
+      "root": "projects/mesa-partes/",
+      "sourceRoot": "projects/mesa-partes/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/mesa-partes",
+            "index": "projects/mesa-partes/src/index.html",
+            "main": "projects/mesa-partes/src/main.ts",
+            "polyfills": "projects/mesa-partes/src/polyfills.ts",
+            "tsConfig": "projects/mesa-partes/tsconfig.app.json",
+            "assets": [
+              "projects/mesa-partes/src/favicon.ico",
+              "projects/mesa-partes/src/assets"
+            ],
+            "styles": [
+              "projects/mesa-partes/src/styles.css"
+            ],
+            "scripts": [],
+            "es5BrowserSupport": true
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/mesa-partes/src/environments/environment.ts",
+                  "with": "projects/mesa-partes/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "mesa-partes:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "mesa-partes:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "mesa-partes:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/mesa-partes/src/test.ts",
+            "polyfills": "projects/mesa-partes/src/polyfills.ts",
+            "tsConfig": "projects/mesa-partes/tsconfig.spec.json",
+            "karmaConfig": "projects/mesa-partes/karma.conf.js",
+            "styles": [
+              "projects/mesa-partes/src/styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "projects/mesa-partes/src/favicon.ico",
+              "projects/mesa-partes/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/mesa-partes/tsconfig.app.json",
+              "projects/mesa-partes/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "mesa-partes-e2e": {
+      "root": "projects/mesa-partes-e2e/",
+      "projectType": "application",
+      "prefix": "",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/mesa-partes-e2e/protractor.conf.js",
+            "devServerTarget": "mesa-partes:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "mesa-partes:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "projects/mesa-partes-e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "oficina-users": {
+      "root": "projects/oficina-users/",
+      "sourceRoot": "projects/oficina-users/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/oficina-users",
+            "index": "projects/oficina-users/src/index.html",
+            "main": "projects/oficina-users/src/main.ts",
+            "polyfills": "projects/oficina-users/src/polyfills.ts",
+            "tsConfig": "projects/oficina-users/tsconfig.app.json",
+            "assets": [
+              "projects/oficina-users/src/favicon.ico",
+              "projects/oficina-users/src/assets"
+            ],
+            "styles": [
+              "projects/oficina-users/src/styles.css"
+            ],
+            "scripts": [],
+            "es5BrowserSupport": true
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/oficina-users/src/environments/environment.ts",
+                  "with": "projects/oficina-users/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "oficina-users:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "oficina-users:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "oficina-users:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/oficina-users/src/test.ts",
+            "polyfills": "projects/oficina-users/src/polyfills.ts",
+            "tsConfig": "projects/oficina-users/tsconfig.spec.json",
+            "karmaConfig": "projects/oficina-users/karma.conf.js",
+            "styles": [
+              "projects/oficina-users/src/styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "projects/oficina-users/src/favicon.ico",
+              "projects/oficina-users/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/oficina-users/tsconfig.app.json",
+              "projects/oficina-users/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "oficina-users-e2e": {
+      "root": "projects/oficina-users-e2e/",
+      "projectType": "application",
+      "prefix": "",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/oficina-users-e2e/protractor.conf.js",
+            "devServerTarget": "oficina-users:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "oficina-users:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "projects/oficina-users-e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
-  "defaultProject": "client-ugel"
+  "defaultProject": "oficina-users"
 }
