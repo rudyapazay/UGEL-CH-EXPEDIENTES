@@ -159,6 +159,8 @@
               "projects/mesa-partes/src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "projects/mesa-partes/src/styles.css"
             ],
             "scripts": [],
@@ -287,6 +289,8 @@
               "projects/oficina-users/src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "projects/oficina-users/src/styles.css"
             ],
             "scripts": [],
