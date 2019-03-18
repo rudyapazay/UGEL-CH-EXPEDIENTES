@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { ExpedienteComponent } from './components/expediente.component';
 import { ExpedienteListComponent } from './components/expediente.list.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { ExpedienteListComponent } from './components/expediente.list.component'
     ExpedienteListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [ExpedienteComponent]
