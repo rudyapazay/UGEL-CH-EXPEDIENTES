@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { ExpedienteComponent } from './components/expediente.component';
+import { ExpedienteListComponent } from './components/expediente.list.component';
 
 @NgModule({
   declarations: [
-    ExpedienteComponent
+    ExpedienteComponent,
+    ExpedienteListComponent
   ],
   imports: [
     BrowserModule

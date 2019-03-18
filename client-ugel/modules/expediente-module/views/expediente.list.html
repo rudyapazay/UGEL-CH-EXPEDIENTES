@@ -1,0 +1,25 @@
+<h2 class=" text-center display-4">  {{title}} </h2>
+
+
+
+<table class="table">
+    <thead >
+        <tr>
+            <th scope="col"> Expediente </th>
+            <th scope="col">Descripcion </th>
+            <th scope="col">Acciones </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let expediente of expedientes ">
+            <td> {{ expediente.numero }}</td>
+            <td> {{ expediente.descripcion}}</td>
+            <td> 
+                <a href="expedientes" class="btn btn-primary btn-sm"  role="button">Derivar </a>
+                <a href="expedientes" class="btn btn-success btn-sm" role="button">Finalizar </a>
+                <a href="expedientes" class="btn btn-danger btn-sm" role="button"> Retornar </a> 
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
